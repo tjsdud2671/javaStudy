@@ -1,63 +1,67 @@
 package t8_sungjuk;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 public class SungjukVO {
-	private int idx;           //테이블에 있는 필드
+
+	private int idx;
 	private String name;
 	private int kor;
 	private int eng;
 	private int mat;
 	
-	private int tot;       //중간에 필요한 변수
+	private int tot;
 	private double avg;
 	private char grade;
 	
-	public int getIdx() {
+	int getIdx() {
 		return idx;
 	}
-	public void setIdx(int idx) {
+	void setIdx(int idx) {
 		this.idx = idx;
 	}
-	public String getName() {
+	String getName() {
 		return name;
 	}
-	public void setName(String name) {
+	void setName(String name) {
 		this.name = name;
 	}
-	public int getKor() {
+	int getKor() {
 		return kor;
 	}
-	public void setKor(int kor) {
+	void setKor(int kor) {
 		this.kor = kor;
 	}
-	public int getEng() {
+	int getEng() {
 		return eng;
 	}
-	public void setEng(int eng) {
+	void setEng(int eng) {
 		this.eng = eng;
 	}
-	public int getMat() {
+	int getMat() {
 		return mat;
 	}
-	public void setMat(int mat) {
+	void setMat(int mat) {
 		this.mat = mat;
 	}
-	
-	public int getTot() {
+	int getTot() {
 		return tot;
 	}
-	public void setTot(int tot) {
+	void setTot(int tot) {
 		this.tot = tot;
 	}
-	public double getAvg() {
+	double getAvg() {
 		return avg;
 	}
-	public void setAvg(double avg) {
+	void setAvg(double avg) {
 		this.avg = avg;
 	}
-	public char getGrade() {
+	char getGrade() {
 		return grade;
 	}
-	public void setGrade(char grade) {
+	void setGrade(char grade) {
 		this.grade = grade;
 	}
 	@Override
@@ -65,7 +69,8 @@ public class SungjukVO {
 		return "SungjukVO [idx=" + idx + ", name=" + name + ", kor=" + kor + ", eng=" + eng + ", mat=" + mat + ", tot="
 				+ tot + ", avg=" + avg + ", grade=" + grade + "]";
 	}
+	
+	
 
-	
-	
 }
+
