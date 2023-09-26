@@ -91,7 +91,7 @@ public class InsaList extends JFrame {
 		pn1.add(txtCondition);
 		txtCondition.setColumns(10);
 		
-	 btnCondition = new JButton("조건검색");
+	  btnCondition = new JButton("조건검색");
 		btnCondition.setFont(new Font("굴림", Font.PLAIN, 14));
 		btnCondition.setBounds(244, 10, 97, 31);
 		pn1.add(btnCondition);
